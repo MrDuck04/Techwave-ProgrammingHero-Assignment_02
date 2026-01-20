@@ -69,7 +69,7 @@
 
                         <button class = "secondary-btn
                         inline-flex items-center gap-2 
-                        text-[#00FF88]
+                        
                         text-base
                         border
                         font-semibold
@@ -86,63 +86,79 @@
                 </div>
             </div>
         </section>
-        <section class = "App1-container
-        flex flex-col justify-center items-center
-        gap-10
-        px-5 py-8
+        <section class ="App1-section 
         bg-[#1A0B2E]
-        text-white text-center
+        text-white
         ">
-            <div class = "Apps1-text
-            flex flex-col justify-center items-center
-            gap-4
-            text-white text-center text-base
+            <div class = "
+            App1-container
             
-            ">
-                <h1 class = "
-                text-[32px] font-bold
-                ">About the Podcast</h1>
-                <p>TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. We break down complex topics into digestible insights, explore productivity strategies that actually work, and share stories of personal growth from industry leaders.
-
-                <br><br>Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
-            </div>
-            <div class = "Apps1-data
-            flex flex-col justify-center items-center
+            flex flex-col items-center
             gap-10
+            px-5 py-10
+            text-center
+
+            lg:px-[200px] lg:pb-30 lg:pt-[50px]
+            lg:gap-20
             ">
-                <div class = "Apps1-data1
-                flex justify-center items-center
-                gap-10
+            <!-- TEXT -->
+                <div class = "
+                App1-text
+                max-w-full
+                flex flex-col items-center
+                gap-4
+                text-sm
+
+                lg:max-w-3xl
+                lg:text-base
                 ">
-                    <div class = "gap-4">
-                        <h1 class = "
-                        Apps1data
-                        ">150K+</h1>
-                        <p class = "uppercase">Monthly Listeners</p>
-                    </div>
-                    <div>
-                        <h1 class = "
-                        Apps1data
-                        ">200+</h1>
-                        <p class = "uppercase">Episodes published</p>
-                    </div>
+                    <h1 class = "
+                    text-[32px] font-bold capitalize
+                    lg:text-5xl
+                    ">
+                        About The Podcast
+                    </h1>
+                    <p class = "leading-relaxed">
+                        TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
+                        We break down complex topics into digestible insights, explore productivity strategies
+                        that actually work, and share stories of personal growth from industry leaders.
+                        <br><br>
+                        Join thousands of young professionals and tech enthusiasts who start their day with TechWave.
+                    </p>
+            </div>
+            
+            <hr class="w-full border-t border-white/20 my-8">
+
+            <!-- DATA -->
+            <div class = "
+            App1-data
+            grid grid-cols-2
+            gap-10
+            w-full
+            
+            
+            lg:gap-20
+            lg:max-w-3xl
+            ">
+                <div class="flex flex-col items-center gap-2">
+                    <h2 class = "text-5xl text-[#00FF88] font-bold lg:text-3xl">150K+</h2>
+                    <p class = "uppercase text-xs lg:text-sm">Monthly Listeners</p>
                 </div>
-                <div class = "Apps1-data2
-                flex justify-between items-center text-center
-                gap-10
-                ">
-                    <div><h1 class = "
-                        Apps1data
-                        ">4.9★</h1>
-                        <p class = "uppercase">Average Rating</p>
-                    </div>
-                    <div><h1 class = "
-                        Apps1data
-                        ">50+</h1>
-                        <p class = "uppercase">Industry Experts</p></div>
+                <div class="flex flex-col items-center gap-2">
+                    <h2 class = "text-5xl text-[#00FF88] font-bold lg:text-3xl">200+</h2>
+                    <p class = "uppercase text-xs lg:text-sm">Episodes Published</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <h2 class = "text-5xl text-[#00FF88] font-bold lg:text-3xl">4.9 &starf;</h2>
+                    <p class = "uppercase text-xs lg:text-sm">Average Rating</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <h2 class = "text-5xl text-[#00FF88] font-bold lg:text-3xl">50+</h2>
+                    <p class = "uppercase text-xs lg:text-sm">Industry experts</p>
                 </div>
             </div>
         </section>
+
         <section class = "Apps2-container
         flex flex-col justify-center items-center
         gap-4
@@ -339,6 +355,7 @@
                     </div>
                 </div>
             </div>
+            <hr class="w-full border-t border-white/20 my-8">
             <div class = "copyrights">
                 <span>&copy; 2026 TechWave. All rights reserved.</span>
             </div>
