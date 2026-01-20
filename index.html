@@ -9,26 +9,65 @@
 </head>
 <body>
     <!-- how to give inside-border// where does nav go? header go?  -->
-    <header class = "
-    flex justify-between px-20 py-16 
+    <header class = "header-section
+    flex justify-between items-center px-20 py-16 
     bg-[#1A0B2E] 
     w-full
+    h-[60px]
     border-[#412567] border
     ">
         <img src="./assets/navigation_logo.png" alt="TechWave Logo" class="">
-        <img src="./assets/hamburger-menu.png" alt="hamburger-menu" class="">
+        <ul class = "nav-links flex text-white gap-8 justify-center items-center">
+            <li>About</li>
+            <li>Episodes</li>
+            <li>Host</li>
+        </ul>
+        <button class = "primary-btn
+                        inline-flex items-center gap-2
+                        text-white
+                        text-base
+                        font-semibold
+                        bg-[linear-gradient(-101deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)]
+                        rounded-full
+                        px-5 py-3
+                        h-11
+                        ">
+                        <span>Listen On Spotify</span> 
+                        <img src="./assets/ArrowRight.png" alt="arrow-right" class="">
+        <img src="./assets/hamburger-menu.png" alt="hamburger-menu" class="lg:hidden">
     </header>
-    <main>
-        <!-- how to give background image -->
+
+
+    <main>        
         <section class = "hero-container">
             <div class = "
             flex flex-col justify-center items-center
             gap-6
             w-[400px]
             ">
-                <div>
-                    <img src="./assets/hero-circle.png" alt=""
-                    class = "w-fit mx-auto">
+                <!-- <div>
+                    <div class = "btn-notice
+                    text-[#1a0b2e] font-semibold bg-[#00ff88]
+                    drop-shadow-[0px 3px 27px 0px rgba(0,255,136,0.5)]
+                    px-4 py-2
+                    rounded-full
+                    ">
+                    <span>New</span>
+                    </div>
+                    <img src="./assets/hero-circle.png" alt="" class = "w-[200px] h-[200px] lg:w-[350px] lg:h-[350px]">
+                    <div class = "microphone
+                    lg:w-[200px] lg:h-[200px] w-[80px] h-[80px]
+                            ">
+                    <img src="./assets/microphone.png" alt="microphone">
+                    </div>
+                </div> -->
+                <div class = "gradient relative flex justify-center items-center">
+                    <img src="./assets/Vector.svg" alt="hero-circle">
+                        <div class = "microphone absolute">
+                            <img src="./assets/microphone.png" alt="microphone">
+                        </div>
+                        <div class = "notice-btn 
+                            "><span>New</span></div>
                 </div>
                 <div class = "Header-text
                 flex flex-col justify-center items-center
@@ -421,15 +460,46 @@
     </main>
     <footer>
         <div class = "footer-content
-        flex flex-col justify-center items-start
+        flex flex-col justify-center items-center
         gap-6
+        lg:gap-8 lg:items-center
         ">
             <img src="./assets/navigation_logo.png" alt="techwave logo">
-            <div class = "partner-logo-container
+            <div class="flex flex-col items-center gap-6 lg:flex-row ">
+  
+  <!-- Column 1 -->
+  <div class="flex  gap-4">
+    <div class="flex items-center gap-3">
+      <img src="./assets/spotify.png" alt="spotify" class="h-8 w-auto">
+      <span class="text-sm font-medium">Spotify</span>
+    </div>
+
+    <div class="flex items-center gap-3">
+      <img src="./assets/apple-podcast.png" alt="podcast" class="h-8 w-auto">
+      <span class="text-sm font-medium">Apple Podcast</span>
+    </div>
+  </div>
+
+  <!-- Column 2 -->
+  <div class="flex  gap-4">
+    <div class="flex items-center gap-3">
+      <img src="./assets/youtube-podcast.png" alt="youtube" class="h-8 w-auto">
+      <span class="text-sm font-medium">YouTube</span>
+    </div>
+
+    <div class="flex items-center gap-3">
+      <img src="./assets/twitter.png" alt="twitter" class="h-8 w-auto">
+      <span class="text-sm font-medium">Twitter</span>
+    </div>
+  </div>
+
+</div>
+
+            <!-- <div class = "partner-logo-container
             flex flex-col justify-between items-center
             
             gap-4
-
+            lg:gap-20 lg:flex-row lg:items-center
             ">
                 <div class = "partner-logo-container-sub
                 
@@ -458,9 +528,9 @@
                         <span>Twitter</span>
                     </div>
                 </div>
-            </div>
-            <hr class="w-full border-t border-white/20 my-8">
-            <div class = "copyrights">
+            </div> -->
+            
+            <div class = "copyrights text-sm leading-relaxed">
                 <span>&copy; 2026 TechWave. All rights reserved.</span>
             </div>
         </div>
