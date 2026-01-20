@@ -17,12 +17,16 @@
     border-[#412567] border
     ">
         <img src="./assets/navigation_logo.png" alt="TechWave Logo" class="">
-        <ul class = "nav-links flex text-white gap-8 justify-center items-center">
-            <li>About</li>
-            <li>Episodes</li>
-            <li>Host</li>
-        </ul>
-        <button class = "primary-btn
+        <div class = " hidden md:block">
+            <ul class = "nav-links flex text-white gap-8 justify-center items-center ">
+                <li>About</li>
+                <li>Episodes</li>
+                <li>Host</li>
+            </ul>
+        </div>
+        
+        <div class = " hidden md:block">
+            <button class = "primary-btn block  
                         inline-flex items-center gap-2
                         text-white
                         text-base
@@ -34,7 +38,14 @@
                         ">
                         <span>Listen On Spotify</span> 
                         <img src="./assets/ArrowRight.png" alt="arrow-right" class="">
-        <img src="./assets/hamburger-menu.png" alt="hamburger-menu" class="lg:hidden">
+            </button>
+        </div>
+            
+        <div class="block md:hidden">
+            <img src="./assets/hamburger-menu.png" alt="hamburger-menu" >
+        </div>
+        
+                    
     </header>
 
 
