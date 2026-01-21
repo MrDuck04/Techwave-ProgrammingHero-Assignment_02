@@ -63,10 +63,61 @@
   padding-left: 1rem;
   padding-right: 1rem;
     cursor: pointer;
+
+    transition: background-color 0.3s ease, transform 0.15s ease;
+}
+
+.notice-btn:hover{
+    background-color: #00e673;
+}
+
+.primary-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;              /* gap-2 */
+
+  height: 2.75rem;          /* h-11 */
+
+  padding: 0.75rem 1.25rem; /* py-3 px-5 */
+  border-radius: 9999px;    /* rounded-full */
+
+  font-size: 1rem;          /* text-base */
+  font-weight: 600;         /* font-semibold */
+  color: #ffffff;           /* text-white */
+
+  background: linear-gradient(
+    -101deg,
+    #F7E93F 0%,
+    #FB09B4 51%,
+    #9100F8 100%
+  );
+
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease, transform 0.15s ease
+}
+
+.primary-btn:hover {
+  box-shadow:
+    0 0 12px rgba(247, 233, 63, 0.35),
+    0 0 20px rgba(251, 9, 180, 0.35),
+    0 0 28px rgba(145, 0, 248, 0.35);
+}
+
+/* optional: slight lift */
+.primary-btn:hover {
+  transform: translateY(-1px);
 }
 
 
+.secondary-btn:hover{
+    box-shadow:
+    0 0 12px rgba(159, 255, 199, 0.35);
 
+}
+.secondary-btn:hover {
+  transform: translateY(-1px);
+}
 .App1-container{
     padding: 40px 20px;
 
