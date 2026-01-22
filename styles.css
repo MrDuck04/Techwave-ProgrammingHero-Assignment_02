@@ -26,6 +26,8 @@
     
 }
 
+
+
 .header-section{
     display: flex;
     justify-content: space-between;
@@ -34,13 +36,39 @@
     height:60px;
     gap:auto;
 
+    
+
+
     @media (min-width: 992px) {
         height : 92px;
+        position:relative;
 
 
         padding: 16px 200px;
 
     }
+}
+
+.nav-left{
+    @media (min-width: 576px) {
+        flex: 0 0 auto;
+     }  
+}
+
+.nav-mid{
+    @media (min-width: 576px) {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap:32px;
+     }  
+}
+
+.nav-right{
+    @media (min-width: 576px) {
+        margin-left:auto;
+     }  
 }
 
 .notice-btn{
@@ -125,6 +153,27 @@
         padding: 50px 200px 150px 200px;
     }   
 }   
+
+a{
+    text-decoration: none;
+    color: inherit;
+
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.App1-section{
+    display: flex;
+    justify-content: center;
+}
+
+.App2-section{
+    display: flex;
+    justify-content: center;
+}
 
 .App2-container{
     padding: 40px 20px;
@@ -256,8 +305,10 @@
     line-height: 24px;
     color: #00FF88;
 }
-
-.host-bonus-content{
+div{  
+    max-width: 1250px;
+}
+.Host-bonus-content{
     background-color: rgba(53, 17, 101, 0.4);
 }
 
@@ -285,6 +336,10 @@ footer{
     background-position: center;
     padding : 20px 40px;
     color:white;
+    display: flex
+    ;
+    justify-content: center;
+    align-items: center;
 }
 
 .partner-logo-content{
